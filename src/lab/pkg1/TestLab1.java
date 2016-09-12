@@ -24,4 +24,11 @@ public class TestLab1 {
         Date d2 = new Date(2008, 12, 26);
         assertEquals(1, d1.daysTo(d2));
     }
+    
+    @Test
+    public void testDaysFailure(){
+        Date d1 = new Date(2008, 12, 25);
+        Date d2 = new Date(2008, 12, 25);
+        assertEquals(1, d1.daysTo(d2));
+    }
 }
